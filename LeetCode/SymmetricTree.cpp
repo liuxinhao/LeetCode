@@ -29,6 +29,7 @@ public:
             }
             else
             {
+               // note here is different
                 return isSameTree(p->left,q->right) && isSameTree(p->right,q->left);
             }
         }
