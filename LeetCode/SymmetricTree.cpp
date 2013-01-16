@@ -43,24 +43,8 @@ public:
             return true;
 
         }
-        if(root->left == NULL && root->right == NULL)
-        {
-            return true;
-        }
-        if(root->left == NULL || root->right == NULL)
-        {
-            return false;
-        }
-        else
-        {
-            TreeNode *left = root->left;
-            TreeNode *right = root->right;
-            return (left->val == right->val) && isSameTree(left->left,right->right) && isSameTree(left->right,right->left);
-           
-           
-                 
-           
-        }
+        return isSameTree(root,root);
+       
         
         
     }
