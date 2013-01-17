@@ -4,6 +4,7 @@ public:
         // Start typing your C/C++ solution below
         // DO NOT write int main() function
         vector<int> ans;
+        if(numbers.size() <= 1) return ans;
         for(int i = 0; i < numbers.size(); i++)
         {
             for(int j = i + 1; j < numbers.size(); j++)
