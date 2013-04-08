@@ -1,3 +1,7 @@
+
+// 思路：
+//a) "   +.123E+13    " 最複雜的正確情況
+//b) 判斷+-.e或者數字字母等情況，如果是數字就while循環到出現非數字
 class Solution {
 public:
     bool isNumber(const char *s) {
