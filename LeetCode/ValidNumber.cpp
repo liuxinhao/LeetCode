@@ -4,10 +4,9 @@ public:
         // Start typing your C/C++ solution below
         // DO NOT write int main() function
         
-            while (*s == ' ') {
+        while (*s == ' ') {
   	s++;
 	}
-	cout << *s << endl;
 	if (*s == '+' || *s == '-')
 		s++;
 	bool hasNum = false;
